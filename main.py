@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ["*"]
+origins = ["https://kerberos.netlify.app/"]
 
 app.add_middleware(
     CORSMiddleware,
