@@ -27,7 +27,7 @@ async def head():
     print("head request received correctly")
     return {"message:" "Success"}
 
-@app.options("")
+@app.options("/")
 async def options():
     print("options request received correctly")
     return {"message": "Success"}
