@@ -24,5 +24,10 @@ async def root(link: Link):
 
 @app.head("/")
 async def head():
-    print("request received correctly")
+    print("head request received correctly")
     return {"message:" "Success"}
+
+@app.options("")
+async def options():
+    print("options request received correctly")
+    return {"message": "Success"}
