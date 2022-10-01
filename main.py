@@ -21,3 +21,8 @@ class Link(BaseModel):
 async def root(link: Link):
     print(link)
     return {"message": "Success"}
+
+@app.head("/")
+async def head():
+    print("request received correctly")
+    return {"message:" "Success"}
