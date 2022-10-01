@@ -8,4 +8,5 @@ class Link(BaseModel):
 
 @app.post("/")
 async def root(link: Link):
+    print(link)
     return {"message": "Success"}
